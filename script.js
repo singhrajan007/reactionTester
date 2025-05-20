@@ -2,13 +2,10 @@ function rotate() {
     var element = document.getElementById("reactionTime");
     var randomX = Math.floor(Math.random() * 500);
     var randomY = Math.floor(Math.random() * 500);
-    var randomwidth = Math.floor(Math.random() *  100 + 50);
-    var randomheight = Math.floor(Math.random() * 100 + 50);
-    var randomRadius = Math.floor(Math.random() * 50 + 10);
-    document.getElementById("reactionTime").style.borderRadius = randomRadius + "px";
+    var randomwidthHeight = Math.floor(Math.random() *  100 + 50);
     document.getElementById("reactionTime").style.position = "absolute";
-    document.getElementById("reactionTime").style.width = randomwidth + "px";
-    document.getElementById("reactionTime").style.height = randomheight + "px";
+    document.getElementById("reactionTime").style.width = randomwidthHeight + "px";
+    document.getElementById("reactionTime").style.height = randomwidthHeight + "px";
     document.getElementById("reactionTime").style.transform = "rotate(" + Math.floor(Math.random() * 360) + "deg)";
     document.getElementById("reactionTime").style.backgroundColor = "hsl(" + Math.floor(Math.random() * 360) + ", 100%, 50%)";
     document.getElementById("reactionTime").style.marginLeft=randomX + "px";
