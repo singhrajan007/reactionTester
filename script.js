@@ -1,4 +1,5 @@
 function rotate() {
+    startTime = new Date().getTime();
     var element = document.getElementById("reactionTime");
     var randomX = Math.floor(Math.random() * 500);
     var randomY = Math.floor(Math.random() * 500);
